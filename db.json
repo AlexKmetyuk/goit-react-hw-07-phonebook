@@ -1,3 +1,24 @@
 {
-  "contacts": []
+  "contacts": [
+    {
+      "id": "483b0468-c026-4f3b-b68c-7f5e36e45c6a",
+      "name": "Lokky",
+      "number": "0985675432"
+    },
+    {
+      "id": "7676739e-867e-4923-b442-bac0ed6960f2",
+      "name": "Alex Kmetyuk",
+      "number": "0980234130"
+    },
+    {
+      "id": "43578dba-4a71-431e-836b-c1f03cb5efe2",
+      "name": "Bobo",
+      "number": "0985675432"
+    },
+    {
+      "id": "5e3dc3fd-3a08-4111-bff0-5f0cd4ae43e0",
+      "name": "Julia",
+      "number": "0689112854"
+    }
+  ]
 }

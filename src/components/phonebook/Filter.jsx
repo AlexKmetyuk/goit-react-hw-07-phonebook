@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import phonebookActions from "../../redux/phonebook-actions";
+import { changeFilter } from "../../redux/phonebook-actions";
 
 const Filter = ({ value, onChange }) => (
   <label className={"form"}>
@@ -9,7 +9,7 @@ const Filter = ({ value, onChange }) => (
 );
 
 const mapDispatchToProps = (dispatch) => ({
-  onChange: (e) => dispatch(phonebookActions.changeFilter(e.target.value)),
+  onChange: (e) => dispatch(changeFilter(e.target.value)),
 });
 
 export default connect(null, mapDispatchToProps)(Filter);

@@ -12,6 +12,7 @@ class App extends Component {
     this.setState({ filter: e.currentTarget.value });
   };
 
+
   render() {
     return (
       <Provider store={store}>

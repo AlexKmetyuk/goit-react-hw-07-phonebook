@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { connect } from "react-redux";
-import phonebookAction from "../../redux/phonebook-actions";
+import phonebookOperations from "../../redux/phonebook-operations";
+import phonebookSelectors from '../../redux/phonebook-selectors'
 import { v4 as uuidv4 } from "uuid";
 
 class PhonebookForm extends Component {
@@ -75,12 +76,12 @@ class PhonebookForm extends Component {
 }
 
 const mapStateToProps = state => ({
-  contacts: state.phonebook.contacts
+  contacts: phonebookSelectors.getContacts(state)
 })
 
 const mapDispatchToProps = (dispatch) => ({
   onSubmit: (contact) => {
-    dispatch(phonebookAction.addContact(contact));
+    dispatch(phonebookOperations.addContact(contact));
   },
 });
 
